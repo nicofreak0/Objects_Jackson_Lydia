@@ -4,7 +4,20 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            
+            Computer myComputer = new Computer("Apple", "All-in-One", true);
+            IBootUp myBootUp = myComputer;
+
+            // compares myComputer with myBootUp
+            Console.WriteLine(myComputer.Equals(myBootUp));
+
+            Computer myOtherComputer = new Computer("Apple", "All-in-One", true);
+            Console.WriteLine(myComputer.Equals(myOtherComputer));
+
+
+            string myString = myComputer.ToString();
+            Console.WriteLine(myString == myComputer.ToString());
+            Console.WriteLine(myString == myOtherComputer.ToString());
         }
     }
 }

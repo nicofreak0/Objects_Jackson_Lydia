@@ -42,7 +42,7 @@ namespace Objects_Jackson_Lydia
             }
         }
 
-        // returns a description of the computer
+        // returns a description of the computer brand and type
         public override string ToString()
         {
             return $"The Computer is Made by {Brand} and is a {Type} Computer.";
