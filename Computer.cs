@@ -38,14 +38,14 @@ namespace Objects_Jackson_Lydia
             // prints to console if IsOn is equal to false
             else
             {
-                Console.WriteLine("The Computer is Shutting down.");
+                Console.WriteLine("The Computer is Shutting Down.");
             }
         }
 
         // returns a description of the computer brand and type
         public override string ToString()
         {
-            return $"The Computer is Made by {Brand} and is a {Type} Computer.";
+            return $"The Computer is Made by {Brand} and is a(n) {Type} Computer, it is on: {IsOn}";
         }
     }
 }
